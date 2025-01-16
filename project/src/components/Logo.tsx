@@ -6,7 +6,7 @@ interface LogoProps {
 
 export function Logo({ className = 'h-8 w-auto' }: LogoProps) {
   return (
-    <div className={`${className} relative`}>
+    <div className={`${className} relative`} style={{maxWidth: '60px'}}>
       <img
         src="/logo.png"
         alt="Mahmood Salah Logo"
