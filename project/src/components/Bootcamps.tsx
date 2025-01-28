@@ -75,21 +75,25 @@ export default function Bootcamps() {
         </div>
 
         {/* Video Section */}
+        {/* Video Section */}
         <div className="mb-16">
-          <motion.a
+          <motion.div
             whileHover={{ scale: 1.02 }}
-            href={bootcampsData[0].videoUrl}
-            target="_blank"
-            rel="noopener noreferrer"
             className="block bg-white p-8 rounded-xl shadow-lg hover:shadow-xl transition-all duration-300"
           >
-            <div className="flex items-center justify-center gap-4 text-mocha">
-              <FaYoutube className="w-12 h-12" />
-              <span className="text-xl font-semibold">Watch Program Overview on YouTube</span>
-            </div>
-          </motion.a>
-        </div>
+            <div className="aspect-w-16 aspect-h-9">
 
+              <iframe
+                  className="w-full h-full rounded-xl"
+                  src={`https://www.youtube.com/embed/${new URL(bootcampsData[0].videoUrl).searchParams.get('v')}?rel=0&amp;controls=0`}
+                  title="YouTube Video"
+                  frameBorder="0"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                  referrerPolicy="strict-origin-when-cross-origin" allowFullScreen
+              ></iframe>
+            </div>
+          </motion.div>
+        </div>
         {/* Description */}
         <div className="bg-white rounded-xl shadow-lg p-8 mb-16">
           <h2 className="text-2xl font-bold mb-4">Program Overview</h2>
