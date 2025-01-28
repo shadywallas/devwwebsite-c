@@ -75,6 +75,7 @@ export default function Navbar() {
 
     if (isHomePage && item.href !== 'bootcamps') {
       return (
+          // @ts-ignore
         <ScrollLink
           to={item.href}
           spy={true}
