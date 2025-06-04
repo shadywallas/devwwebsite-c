@@ -12,7 +12,6 @@ This repository contains the source code for a personal portfolio website built 
 1. Install Node.js (version 18 or later).
 2. Install dependencies:
    ```bash
-   cd project
    npm install
    ```
 3. Launch the development server:
